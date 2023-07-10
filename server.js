@@ -1,8 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const userRoutes = require("./route")
-const dotenv = require(dotenv);
-dotenv.config();
+
 // Importing connection
 require("./db/config");
 
