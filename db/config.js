@@ -1,3 +1,3 @@
 // Connecting to mongodb server
 const mongoose = require("mongoose");
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(MONGO_URI);

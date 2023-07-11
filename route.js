@@ -4,9 +4,89 @@ const Users_model = require("./db/users_schema");
 const Jwt = require("jsonwebtoken");
 const jwtKey = "news";
 
+let landing_page = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Aggregator Tech Stack</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+<h1>Welcome to backend</h1>
+<h4>Tech Stack</h4>
+<table class="table">
+      <thead>
+        <tr>
+          <th><b>Category</b></th>
+          <th><b>Technology</b></th>
+          <th><b>Description</b></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Frontend</b></td>
+          <td><b>React</b></td>
+          <td>A JavaScript library for building user interfaces</td>
+        </tr>
+        <tr>
+          <td><b>Backend</b></td>
+          <td><b>Node.js</b></td>
+          <td>A JavaScript runtime environment</td>
+        </tr>
+        <tr>
+          <td><b>Backend</b></td>
+          <td><b>Express.js</b></td>
+          <td>A web framework for Node.js</td>
+        </tr>
+        <tr>
+          <td><b>Database</b></td>
+          <td><b>MongoDB</b></td>
+          <td>A NoSQL database</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+    <b>Site name: news aggregator</b>
+    </p>  
+    <p>
+    <b>Team name: B46</b>
+    </p>  
+    <p>
+    <b>Team members Name: Aaditya, Vedant, Abhinay, Melvin</b>
+    </p>  
+    <p>
+    <b>University: VIT Bhopal University</b>
+    </p>  
+    <p>
+    <b>Tech Stack: HTML, CSS, Javascript, ReactJs, NodeJs, ExpressJs, jwt-authentication, npm, MongoDB</b>
+    </p>  
+    <p>
+    <b>
+      Backend:  <a href="https://github.com/AadityaNayak/news-aggregator-b46-backend" class="btn btn-primary">Backend</a>
+    </b>
+    </p>  
+    <p>
+    <b>
+      Frontend:  <a href="https://github.com/AadityaNayak/news-aggregator-b46-frontend" class="btn btn-primary">Frontend</a>
+    </b>
+    </p>  
+    <b>
+      Frontend API Link:  <a href="https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1/" class="btn btn-primary">Visit Source</a>
+    </b>
+    </p>  
+    </p>  
+    <p>
+    <b>Functionalities of Backend: User Login, User Signup, User Update, User Delete</b>
+    </p>  
+</div>
+</body>
+</html>`
+
 // Just to render something at landing page
 router.get("/", (req, res) => {
-  res.send("<h1>This is Backend</h1>");
+  res.send(landing_page);
 });
 
 // signup API
