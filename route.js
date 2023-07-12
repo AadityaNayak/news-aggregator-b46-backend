@@ -92,8 +92,7 @@ router.get("/", (req, res) => {
 // signup API
 router.post("/signup", async (req, res) => {
   let result_ = await Users_model.findOne({
-    email: req.body.email,
-    password: req.body.password,
+    email: req.body.email
   });
 
   if (result_ == null) {
